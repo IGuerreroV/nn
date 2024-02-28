@@ -3,6 +3,8 @@ import ivan from '../assets/ivan.png'
 
 // Icons
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { BiSolidBriefcaseAlt2 } from 'react-icons/bi'
+import { MdEmail } from 'react-icons/md'
 
 const Main = () => {
   return (
@@ -21,20 +23,32 @@ const Main = () => {
           </div>
           <div className='flex flex-col items-center sm:items-start gap-3'>
             <div className='flex flex-col items-left gap-2'>
-              <h1 class='font-Lora text-2xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 m-0'>Iván Guerrero</h1>
-              <p className=' text-slate-600 text-sm sm:text-lg rounded-2xl max-w-xl font-Lora font-medium m-0'>I'm a passionate web development.</p>
+              <h1 class='font-Lora text-2xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 m-0 dark:text-white'>Iván Guerrero</h1>
+              <p className=' text-slate-600 text-sm sm:text-lg rounded-2xl max-w-xl font-Lora font-medium m-0 dark:text-gray-400'>I'm a passionate web development.</p>
             </div>
             <div className='flex gap-3'>
-              <a target='_blank' className='flex items-center text-base text-[#0284C7] font-Lora gap-3 bg-indigo-100 py-2 px-4 rounded-xl h-6 font-bold border-2 hover:cursor-pointer hover:shadow-social'>
+              <a target='_blank' className='flex items-center text-base text-[#0284C7] font-Lora gap-3 bg-indigo-100 py-2 px-4 rounded-xl h-6 font-bold border-2 hover:cursor-pointer hover:shadow-socialLight dark:hover:shadow-socialDark'>
                 <FaLinkedin className='text-[#0284C7]' /> Linkedin
               </a>
-              <a className='flex items-center text-base font-Lora gap-3 bg-indigo-100 text-[#0284C7] py-2 px-4 rounded-xl h-6 font-bold hover:cursor-pointer border-4 hover:border-8 hover:shadow-social'>
+              <a className='flex items-center text-base font-Lora gap-3 bg-indigo-100 text-[#0284C7] py-2 px-4 rounded-xl h-6 font-bold hover:cursor-pointer border-4 hover:border-8 hover:shadow-socialLight dark:hover:shadow-socialDark'>
                 <FaGithub className='text-[#0284C7]' /> Github
               </a>
             </div>
           </div>
         </section>
         <hr className='border border-dotted border-gray-300 rounded-md w-full' />
+        <section>
+          <header className='font-bold font-Lora text-xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3'>
+            <h2>Projects</h2>
+            <BiSolidBriefcaseAlt2 className='text-3xl' />
+          </header>
+        </section>
+        <section>
+          <header className='font-bold font-Lora text-xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3'>
+            <h2>Email</h2>
+            <MdEmail className='text-3xl' />
+          </header>
+        </section>
       </main>
     </div>
 
